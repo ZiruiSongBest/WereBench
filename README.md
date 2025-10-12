@@ -1,7 +1,3 @@
-Of course, here is the `README.md` file written in English, based on your requirements and the provided materials.
-
----
-
 # WereBench: Evaluating LLMs in Social Deduction Games with Human-Aligned Strategies
 
 **WereBench** is a new benchmark for evaluating the language, reasoning, and strategic capabilities of Large Language Models (LLMs) in social deduction games. The project is based on a high-quality, multimodal Werewolf dataset and introduces a novel evaluation framework called **WereAlign**.
