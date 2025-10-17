@@ -5,14 +5,13 @@ GAME_CONFIG = {
         "source": "Pandakill Season , Episode ",
         "game_rules": "", # 按要求：留空或手动填写规则
         "game_roles": [ # 填写此板子中的所有角色
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
+            "预言家",
+            "女巫",
+            "守卫",
+            "猎人",
+            "狼人",
+            "恶魔",
+            "村民"
         ],
         "game_status": OrderedDict([ # 必须按时间顺序填写！
             ("first_night", ""), # 游戏从SRT 00:00:00,120 开始
