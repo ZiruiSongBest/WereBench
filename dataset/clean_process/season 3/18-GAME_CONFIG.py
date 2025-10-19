@@ -2,7 +2,7 @@ GAME_CONFIG = {
     # 1. 元数据 (在 'metadata' 键下)
     "metadata": {
         "game_id": "18",
-        "source": "Pandakill Season 3, Episode 18",
+        "source": "Pandakill Season 3, Episode 6",
         "game_rules": "", # 按要求：留空或手动填写规则
         "game_roles": [ # 填写此板子中的所有角色
             "预言家",
