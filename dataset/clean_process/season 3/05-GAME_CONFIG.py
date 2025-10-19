@@ -72,5 +72,5 @@ GAME_CONFIG = {
     
     # 3. 摘要提取范围
     # (按要求：从第 381 条到第 398 条)
-    "summary_id_range": (, )
+    "summary_id_range": (811, 816)
 }
