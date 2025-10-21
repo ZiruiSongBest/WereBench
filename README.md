@@ -16,7 +16,7 @@ Our experiments show that while existing LLMs can generate fluent language, they
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/ZiruiSongBest/WereBench.git
+    git clone GITHUB_REPO
     cd WereBench
     ```
 
@@ -33,13 +33,13 @@ Our experiments show that while existing LLMs can generate fluent language, they
 
 4.  **Download the Dataset**
     
-    We uploaded WereBench to [Yuan4629/WereBench](https://huggingface.co/datasets/Yuan4629/WereBench) and you can use it conveniently by visiting huggingface.co
+    We uploaded WereBench to LINK_TO_HF and you can use it conveniently by visiting huggingface.co
 
 ## Dataset (WereBench)
 
 WereBench is a curated, human-verified multimodal Werewolf dataset, containing over 100 hours of video, 32.4M utterance tokens, and 15 rule variants.
 
-**Dataset Link (Coming Soon)**: [Hugging Face link to be determined]
+**Dataset Link**: LINK_TO_HF
 
 ## Code Structure
 
@@ -88,12 +88,3 @@ Decision evaluation complements the speech-level analysis, further testing wheth
 ## How to Cite
 
 If you use WereBench, please cite the project and the associated paper (fill in final metadata as available):
-
-```text
-@article{song2025beyond,
-  title={Beyond Survival: Evaluating LLMs in Social Deduction Games with Human-Aligned Strategies},
-  author={Song, Zirui and Huang, Yuan and Liu, Junchang and Luo, Haozhe and Wang, Chenxi and Gao, Lang and Xu, Zixiang and Han, Mingfei and Chang, Xiaojun and Chen, Xiuying},
-  journal={arXiv preprint arXiv:2510.11389},
-  year={2025}
-}
-```
