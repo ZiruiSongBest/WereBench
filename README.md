@@ -87,4 +87,4 @@ Decision evaluation complements the speech-level analysis, further testing wheth
 
 ## How to Cite
 
-If you use WereBench, please cite the project and the associated paper (fill in final metadata as available):
+If you use WereBench, please cite the project and the associated paper:
