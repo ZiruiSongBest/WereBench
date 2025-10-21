@@ -1,4 +1,6 @@
-# WereBench: Evaluating LLMs in Social Deduction Games with Human-Aligned Strategies
+# Beyond Survival: Evaluating LLMs in Social Deduction Games with Human-Aligned Strategies
+
+Social deduction games like Werewolf combine language, reasoning, and strategy, providing a testbed for studying natural language and social intelligence. However, most studies reduce the game to LLM-based self-play, yielding templated utterances and anecdotal cases that overlook the richness of social gameplay. Evaluation further relies on coarse metrics such as survival time or subjective scoring due to the lack of quality reference data. To address these gaps, we curate a high-quality, human-verified multimodal Werewolf dataset containing over 100 hours of video, 32.4M utterance tokens, and 15 rule variants. Based on this dataset, we propose a novel strategy-alignment evaluation that leverages the winning faction's strategies as ground truth in two stages: 1) Speech evaluation, formulated as multiple-choice-style tasks that assess whether the model can adopt appropriate stances across five dimensions of social ability; and 2) Decision evaluation, which assesses the model's voting choices and opponent-role inferences. This framework enables a fine-grained evaluation of models' linguistic and reasoning capabilities, while capturing their ability to generate strategically coherent gameplay. Our experiments show that state-of-the-art LLMs show diverse performance, with roughly half remain below 0.50, revealing clear gaps in deception and counterfactual reasoning. We hope our dataset further inspires research on language, reasoning, and strategy in multi-agent interaction.
 
 **WereBench** is a new benchmark for evaluating the language, reasoning, and strategic capabilities of Large Language Models (LLMs) in social deduction games. The project is based on a high-quality, multimodal Werewolf dataset and introduces a novel evaluation framework called **WereAlign**.
 
@@ -30,7 +32,8 @@ Our experiments show that while existing LLMs can generate fluent language, they
     ```
 
 4.  **Download the Dataset**
-    *(This section will be updated once the dataset is uploaded)*
+    
+    We uploaded WereBench to [Yuan4629/WereBench](https://huggingface.co/datasets/Yuan4629/WereBench) and you can use it conveniently by visiting huggingface.co
 
 ## Dataset (WereBench)
 
@@ -45,6 +48,7 @@ WereBench is a curated, human-verified multimodal Werewolf dataset, containing o
 ├── asset # Contains assets like images used in the README
 ├── data # Directory for the dataset
 │   └── ...
+├── docs # Directory for page deployment
 ├── eval # Source code
 │   └── ... # Evaluation script
 ├── requirements.txt # Project dependencies
@@ -83,4 +87,13 @@ Decision evaluation complements the speech-level analysis, further testing wheth
 
 ## How to Cite
 
-If you find our work helpful for your research, please consider citing our paper
+If you use WereBench, please cite the project and the associated paper (fill in final metadata as available):
+
+```text
+@article{song2025beyond,
+  title={Beyond Survival: Evaluating LLMs in Social Deduction Games with Human-Aligned Strategies},
+  author={Song, Zirui and Huang, Yuan and Liu, Junchang and Luo, Haozhe and Wang, Chenxi and Gao, Lang and Xu, Zixiang and Han, Mingfei and Chang, Xiaojun and Chen, Xiuying},
+  journal={arXiv preprint arXiv:2510.11389},
+  year={2025}
+}
+```
