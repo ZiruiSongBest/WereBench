@@ -68,7 +68,7 @@ GAME_CONFIG = {
                 "second_day_votes": {
                     "vote_to": "8号",
                     "cut_off_time": 510
-                }
+                },
                 "third_day_votes": {
                     "vote_to": "4号",
                     "cut_off_time": 595
