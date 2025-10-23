@@ -60,7 +60,11 @@ WereBench is a curated, human-verified multimodal Werewolf dataset, containing o
 You can use the `eval/Decision_Evaluation/inference.py` script to reproduce the evaluation results from the paper.
 
 ```bash
+# for Decision Evaluation
 python eval/Decision_Evaluation/inference.py
+
+# for Role Performance
+python eval/Role_Performance/inference.py
 ```
 *   Make sure you modify the script's call and model to suit your needs before running it
 

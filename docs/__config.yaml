@@ -1,0 +1,32 @@
+title: WereBench
+description: A benchmark for werewolf-style role inference and reasoning
+remote_theme: just-the-docs/just-the-docs
+
+# GitHub Pages canonical URL config
+url: https://ZiruiSongBest.github.io
+baseurl: /WereBench
+
+logo: /WereBench/assets/logo.svg
+favicon_ico: /WereBench/assets/logo.svg
+
+# Top-right external links (open in new tab)
+aux_links:
+  "📄 Paper": "https://arxiv.org/pdf/2510.11389"
+  "🐙 Code": "https://github.com/ZiruiSongBest/WereBench"
+  "🤗 Dataset": "https://huggingface.co/datasets/Yuan4629/WereBench"
+aux_links_new_tab: true
+
+# "Edit this page" button
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/ZiruiSongBest/WereBench"
+gh_edit_branch: "main"
+gh_edit_source: "docs"
+gh_edit_view_mode: "tree"
+
+# Features
+search_enabled: true
+heading_anchors: true
+
+plugins:
+  - jekyll-seo-tag
