@@ -6,14 +6,14 @@ remote_theme: just-the-docs/just-the-docs
 url: https://ZiruiSongBest.github.io
 baseurl: /WereBench
 
-logo: /WereBench/assets/logo.svg
-favicon_ico: /WereBench/assets/logo.svg
+logo: assets/logo.svg
+favicon_ico: assets/logo.svg
 
 # Top-right external links (open in new tab)
 aux_links:
-  "📄 Paper": "https://arxiv.org/pdf/2510.11389"
-  "🐙 Code": "https://github.com/ZiruiSongBest/WereBench"
-  "🤗 Dataset": "https://huggingface.co/datasets/Yuan4629/WereBench"
+  "📄 Paper": "LINK_TO_ARXIV"
+  "🐙 Code": "GITHUB_REPO"
+  "🤗 Dataset": "LINK_TO_HF"
 aux_links_new_tab: true
 
 # "Edit this page" button

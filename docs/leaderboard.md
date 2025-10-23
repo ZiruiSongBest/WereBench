@@ -6,4 +6,4 @@ nav_order: 4
 
 # Leaderboard
 
-![Evaluation results](../asset/evaluation.png)
+![Evaluation results](assets/evaluation.png)
