@@ -2,7 +2,6 @@
 html, body { font-family: "Google Sans","Noto Sans","Helvetica Neue",Arial,sans-serif; }
 .content { font-size: 16px; line-height: 1.7; }
 
-/* Hero spacing & title like Geolocation */
 .hero .hero-body { padding-top: 3rem; padding-bottom: 2rem; }
 .publication-title { font-weight: 700; }
 .publication-links .link-block { margin: 0 .25rem; display: inline-block; }
