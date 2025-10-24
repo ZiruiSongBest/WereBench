@@ -5,7 +5,7 @@ nav_order: 1
 description: A benchmark for werewolf-style role inference and reasoning
 ---
 
-# <center> WereBench<center>
+<!-- # <center> WereBench<center> -->
 
 > Benchmarking **role inference** and **logic reasoning** in social deduction games like Werewolf.
 

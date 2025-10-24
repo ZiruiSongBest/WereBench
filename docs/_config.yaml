@@ -12,20 +12,21 @@ plugins:
 # Metadata to drive Geolocation-style hero & navbar buttons
 project:
   subtitle: Evaluating LLMs in Social Deduction Games with Human-Aligned Strategies
-  paper_url: https://arxiv.org/pdf/2510.11389
-  code_url: https://github.com/ZiruiSongBest/WereBench
-  dataset_url: https://huggingface.co/datasets/Yuan4629/WereBench
+  paper_url: LINK_TO_ARXIV
+  code_url: GITHUB_REPO
+  dataset_url: LINK_TO_HF
   authors:
-    - { name: "Zirui Song",       aff: 1, url: "https://ziruisongbest.github.io/" }
-    - { name: "Yuan Huang",       aff: 2 }
-    - { name: "Junchang Liu",     aff: 2 }
-    - { name: "Haozhe Luo",       aff: 2 }
-    - { name: "Chenxi Wang",      aff: 1 }
-    - { name: "Lang Gao",         aff: 1 }
-    - { name: "Zixiang Xu",       aff: 1 }
-    - { name: "Mingfei Han",      aff: 1 }
-    - { name: "Xiaojun Chang",    aff: 1 }
-    - { name: "Xiuying Chen",     aff: 1 }
-  affiliations:
-    "1": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)"
-    "2": "Northeastern University"
+    - { name: "Anonymous"}
+    # - { name: "Zirui Song",       aff: 1, url: "https://ziruisongbest.github.io/" }
+    # - { name: "Yuan Huang",       aff: 2 }
+    # - { name: "Junchang Liu",     aff: 2 }
+    # - { name: "Haozhe Luo",       aff: 2 }
+    # - { name: "Chenxi Wang",      aff: 1 }
+    # - { name: "Lang Gao",         aff: 1 }
+    # - { name: "Zixiang Xu",       aff: 1 }
+    # - { name: "Mingfei Han",      aff: 1 }
+    # - { name: "Xiaojun Chang",    aff: 1 }
+    # - { name: "Xiuying Chen",     aff: 1 }
+  # affiliations:
+  #   "1": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)"
+  #   "2": "Northeastern University"
