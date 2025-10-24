@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} — {{ site.title }}</title>
+  {% seo %}
+  <!-- Geolocation-style deps -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="icon" href="{{ '/assets/logo.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/index.css' | relative_url }}">
+</head>
+<body>
+
+  <!-- Top navbar -->
+  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{ '/' | relative_url }}">
+          <img src="{{ '/assets/logo.svg' | relative_url }}" alt="WereBench" style="height:28px;margin-right:8px;">
+          <strong>{{ site.title }}</strong>
+        </a>
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="{{ '/' | relative_url }}">Home</a>
+          <a class="navbar-item" href="{{ '/quickstart' | relative_url }}">Quick Start</a>
+          <a class="navbar-item" href="{{ '/dataset' | relative_url }}">Dataset</a>
+          <a class="navbar-item" href="{{ '/leaderboard' | relative_url }}">Leaderboard</a>
+          <a class="navbar-item" href="{{ '/faq' | relative_url }}">FAQ</a>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="{{ site.project.paper_url }}" target="_blank"><i class="ai ai-arxiv"></i>&nbsp;Paper</a>
+          <a class="navbar-item" href="{{ site.project.code_url }}" target="_blank"><i class="fab fa-github"></i>&nbsp;Code</a>
+          <a class="navbar-item" href="{{ site.project.dataset_url }}" target="_blank"><i class="fas fa-database"></i>&nbsp;Dataset</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  {% assign is_home = page.path == 'index.md' or page.url == '/' or page.nav_order == 1 %}
+  {% if is_home %}
+  <!-- Hero (home only) -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="title is-1 publication-title">
+          {{ site.title }}
+          {% if site.project.subtitle %}<span class="is-size-3">: {{ site.project.subtitle }}</span>{% endif %}
+        </h1>
+
+        <!-- Authors -->
+        <div class="is-size-5 publication-authors">
+          {% for a in site.project.authors %}
+            <span class="author-block">
+              {% if a.url %}
+                <a href="{{ a.url }}" style="color:#f68946;font-weight:normal;">{{ a.name }}<sup>{{ a.aff }}</sup></a>
+              {% else %}
+                <span style="color:#f68946;font-weight:normal;">{{ a.name }}<sup>{{ a.aff }}</sup></span>
+              {% endif %}
+              {% unless forloop.last %},{% endunless %}
+            </span>
+          {% endfor %}
+        </div>
+
+        <!-- Affiliations -->
+        <div class="is-size-6 publication-authors">
+          {% for k in site.project.affiliations %}
+            <div>{{ k[1] }}<sup>{{ k[0] }}</sup></div>
+          {% endfor %}
+        </div>
+
+        <!-- Buttons -->
+        <div class="publication-links">
+          <span class="link-block">
+            <a href="{{ site.project.paper_url }}" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="ai ai-arxiv"></i></span><span>arXiv</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="{{ site.project.code_url }}" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="fab fa-github"></i></span><span>Code</span>
+            </a>
+          </span>
+          <span class="link-block">
+            <a href="{{ site.project.dataset_url }}" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon"><i class="fas fa-database"></i></span><span>Dataset</span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Page content -->
+  <section class="section">
+    <div class="container is-max-desktop content">
+      {{ content }}
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p class="is-size-7">&copy; {{ "now" | date: "%Y" }} WereBench — Built with GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+  <script>
+    // burger for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+      var burger = document.querySelector('.navbar-burger');
+      var menu = document.getElementById('navMenu');
+      if (burger && menu) {
+        burger.addEventListener('click', function() {
+          burger.classList.toggle('is-active');
+          menu.classList.toggle('is-active');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

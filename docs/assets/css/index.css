@@ -1,0 +1,16 @@
+/* Typo & container */
+html, body { font-family: "Google Sans","Noto Sans","Helvetica Neue",Arial,sans-serif; }
+.content { font-size: 16px; line-height: 1.7; }
+
+/* Hero spacing & title like Geolocation */
+.hero .hero-body { padding-top: 3rem; padding-bottom: 2rem; }
+.publication-title { font-weight: 700; }
+.publication-links .link-block { margin: 0 .25rem; display: inline-block; }
+.publication-authors .author-block { margin: 0 .15rem; }
+
+/* Keep Markdown pages readable */
+.section .container.content { padding-top: 0.5rem; padding-bottom: 2.5rem; }
+
+/* Tables/images in docs */
+.content table { width: 100%; }
+.content img { max-width: 100%; height: auto; }
