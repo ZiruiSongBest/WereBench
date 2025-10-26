@@ -141,7 +141,7 @@ function shadeByColumn() {
       const alpha = 0.1 + 0.35 * t; // 0.10~0.45
       // blue-ish
       td.style.backgroundColor = `rgba(59,130,246,${alpha})`;  // Tailwind blue-500 tone
-      td.style.color = t > 0.75 ? "#fff" : "#111827";          // white text on darker tone
+      td.style.color = "#111827";          // white text on darker tone
     });
   });
 }
@@ -162,12 +162,12 @@ function setActiveButton(key, dir) {
   if (btn) {
     btn.classList.add("active");
     // Add arrow indicator
-    const base = btn.textContent.replace(/[▲▼]\s*$/,"");
-    btn.textContent = base + (dir === "desc" ? " ▼" : " ▲");
+    const base = btn.textContent.replace(/[↑↓]\s*$/,"");
+    btn.textContent = base + (dir === "desc" ? " ↓" : " ↑");
   }
   // Reset others' arrows
   buttons.forEach(b => {
-    if (b.dataset.key !== key) b.textContent = b.textContent.replace(/[▲▼]\s*$/,"");
+    if (b.dataset.key !== key) b.textContent = b.textContent.replace(/[↑↓]\s*$/,"");
   });
 }
 
