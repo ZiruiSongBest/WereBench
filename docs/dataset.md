@@ -54,4 +54,4 @@ Decision evaluation complements the speech-level analysis, further testing wheth
 
 ## Access & license
 
-Dataset: 🤗 Hugging Face (see top-right link).
+Dataset: 🤗 [Hugging Face](https://huggingface.co/datasets/Yuan4629/WereBench) (see top-right link).

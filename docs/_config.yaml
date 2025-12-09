@@ -11,7 +11,7 @@ project:
   subtitle: Evaluating LLMs in Social Deduction Games with Human-Aligned Strategies
   paper_url: LINK_TO_ARXIV
   code_url: GITHUB_REPO
-  dataset_url: LINK_TO_HF
+  dataset_url: https://huggingface.co/datasets/Yuan4629/WereBench
   authors:
     - { name: "Anonymous"}
   # affiliations:

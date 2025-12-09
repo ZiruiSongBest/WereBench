@@ -27,7 +27,7 @@ nav_order: 2
 
     Preferred source is Hugging Face 🤗:
     ```bash
-    hf download LINK_TO_HF
+    hf download https://huggingface.co/datasets/Yuan4629/WereBench
     ```
 
 5. **Minimal evaluation**
